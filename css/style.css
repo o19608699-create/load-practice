@@ -1,0 +1,29 @@
+/*ローディング画面*/
+#loading{
+    transition: all 5s;
+    background-color: #ddd;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: grid;
+    place-items: center;
+}
+.spinner{
+    width:fit-content;
+    height:fit-content;
+}
+.loaded{
+    opacity: 0;
+    visibility: hidden;
+}
+/*コンテンツ部分*/
+.gallery{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+img{
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+}
